@@ -40,6 +40,7 @@ if TYPE_CHECKING:
     from darts.ad.anomaly_model import (
         ForecastingAnomalyModel as ForecastingAnomalyModel,
     )
+    from darts.ad.detectors import IQRDetector as IQRDetector
     from darts.ad.detectors import QuantileDetector as QuantileDetector
     from darts.ad.detectors import ThresholdDetector as ThresholdDetector
     from darts.ad.scorers import CauchyNLLScorer as CauchyNLLScorer
@@ -62,7 +63,8 @@ _LAZY_IMPORTS: dict[str, str] = {
     # anomaly models
     "FilteringAnomalyModel": "darts.ad.anomaly_model",
     "ForecastingAnomalyModel": "darts.ad.anomaly_model",
-    # anomaly detectors
+    # anomaly detectors 
+    "IQRDetector": "darts.ad.detectors",
     "QuantileDetector": "darts.ad.detectors",
     "ThresholdDetector": "darts.ad.detectors",
     # anomaly scorers
